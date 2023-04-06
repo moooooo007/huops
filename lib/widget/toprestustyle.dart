@@ -8,18 +8,21 @@ class toprestustyle extends StatelessWidget {
   double width ;
   double hights;
   double readuis ;
+  bool center ;
   toprestustyle
       ({required this.nameitem,
     required this.image,
     required this.numberrest,
     required this.width,
     required this.hights,
-    required this.readuis
+    required this.readuis,
+    required this.center
       });
   @override
   Widget build(BuildContext context) {
     return
       Column(
+        crossAxisAlignment:center==true ? CrossAxisAlignment.center:CrossAxisAlignment.start,
     children: [
         InkWell(onTap: (){},
           child:

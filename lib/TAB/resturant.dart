@@ -32,7 +32,7 @@ class resturanttab extends StatelessWidget {
             SingleChildScrollView(
               child: Stack(
                 children: [
-                  FlexibleSpaceBar(
+                  const FlexibleSpaceBar(
 
                   ),
                   Column(
@@ -41,7 +41,7 @@ class resturanttab extends StatelessWidget {
                     children: [
                       Center(
                         child:
-                        Container(
+                        SizedBox(
                           height:MediaQuery.of(context).size.width * .55,
                         width: MediaQuery.of(context).size.width - 100,
                           child: Column(
@@ -105,6 +105,7 @@ class resturanttab extends StatelessWidget {
                                     shrinkWrap: true,
                                     itemBuilder: (ctx, index) {
                                       return toprestustyle(
+                                         center: false,
                                           readuis: 20,
                                           width: 100,
                                           hights: 75,
@@ -136,7 +137,7 @@ class resturanttab extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(
+            SizedBox(
               height:MediaQuery.of(context).size.width * .45,
               width: MediaQuery.of(context).size.width - 100,
               child: Column(
@@ -172,6 +173,7 @@ class resturanttab extends StatelessWidget {
                         shrinkWrap: true,
                         itemBuilder: (ctx, index) {
                           return toprestustyle(
+                              center: false,
                               readuis: 5,
                               width: 150,
                               hights: 75,
@@ -186,7 +188,7 @@ class resturanttab extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height:MediaQuery.of(context).size.width * .45,
               width: MediaQuery.of(context).size.width - 100,
               child: Column(
@@ -220,6 +222,7 @@ class resturanttab extends StatelessWidget {
                         shrinkWrap: true,
                         itemBuilder: (ctx, index) {
                           return toprestustyle(
+                              center: false,
                               readuis: 5,
                               width: 100,
                               hights: 75,
@@ -233,7 +236,7 @@ class resturanttab extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height:MediaQuery.of(context).size.width * .45,
               width: MediaQuery.of(context).size.width - 100,
               child: Column(
@@ -267,6 +270,7 @@ class resturanttab extends StatelessWidget {
                         shrinkWrap: true,
                         itemBuilder: (ctx, index) {
                           return toprestustyle(
+                             center: false,
                               readuis: 5,
                               width: 100,
                               hights: 75,
@@ -280,7 +284,7 @@ class resturanttab extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               height:MediaQuery.of(context).size.width * .45,
               width: MediaQuery.of(context).size.width - 100,
               child: Column(
@@ -314,6 +318,7 @@ class resturanttab extends StatelessWidget {
                         shrinkWrap: true,
                         itemBuilder: (ctx, index) {
                           return toprestustyle(
+                             center: true,
                               readuis: 5,
                               width: 100,
                               hights: 75,
